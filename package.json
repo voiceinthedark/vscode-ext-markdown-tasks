@@ -1,8 +1,14 @@
 {
   "name": "markdown-task-calculator",
   "displayName": "Markdown Task Calculator",
-  "description": "Calculate the tasks in a markdown file",
-  "version": "0.0.1",
+  "description": "Calculate the tasks in a markdown file and generate Total tasks, done tasks and total percentage done",
+  "version": "0.0.2",
+  "publisher": "voiceinthedark",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voiceinthedark/vscode-ext-markdown-tasks"
+  },
   "engines": {
     "vscode": "^1.79.0"
   },
