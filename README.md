@@ -13,10 +13,13 @@ A Simple Markdown Task Calculator that will calculate the tasks in a markdown fi
 
 ## Installation
 
-Copy the vsix extension to your extensions folder.
+To load an extension, you need to copy the files to your VS Code extensions folder .vscode/extensions. Depending on your platform, it is located in the following folders:
 -   **Windows** `%USERPROFILE%\.vscode\extensions`
 -   **macOS** `~/.vscode/extensions`
 -   **Linux** `~/.vscode/extensions`
+
+To install an extension, run the following command:
+`code --install-extension markdown-task-calculator-0.0.2.vsix`
 
 ## Release Notes
 
