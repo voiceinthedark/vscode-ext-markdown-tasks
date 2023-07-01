@@ -29,6 +29,9 @@ Users appreciate release notes as you update your extension.
 
 Initial release.
 
+### 0.0.3
+Added case for no tasks in file
+
 ---
 
 ## For more information

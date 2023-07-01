@@ -44,24 +44,35 @@ function activate(context) {
           return line.trim().startsWith('- [x]');
         }).length;
 
-        // display the result at current position
-        editor.edit((editBuilder) => {
-          editBuilder.insert(
-            selection.active,
-            '\n**Total Task Count:** ' +
-              totalTaskCount +
-              '\n**Finished Task Count:** ' +
-              finishedTaskCount +
-              '\n**Completion Percentage:** ' +
-              ((finishedTaskCount / totalTaskCount) * 100).toFixed(2) +
-              '%'
-          );
-        });
+        if(totalTaskCount > 0){
+          // display the result at current position
+          editor.edit((editBuilder) => {
+            editBuilder.insert(
+              selection.active,
+              '\n**Total Task Count:** ' +
+                totalTaskCount +
+                '\n**Finished Task Count:** ' +
+                finishedTaskCount +
+                '\n**Completion Percentage:** ' +
+                ((finishedTaskCount / totalTaskCount) * 100).toFixed(2) +
+                '%'
+            );
+          });
 
-        // Display a message box to the user
-        vscode.window.showInformationMessage(
-          `Total Task Count: ${totalTaskCount} Finished Task Count: ${finishedTaskCount}`
-        );
+          // Display a message box to the user
+          vscode.window.showInformationMessage(
+            `Total Task Count: ${totalTaskCount} Finished Task Count: ${finishedTaskCount}`
+          );
+          // update the status bar
+          vscode.window.setStatusBarMessage(
+            `Total Task Count: ${totalTaskCount} Finished Task Count: ${finishedTaskCount}`
+          );
+        } else {
+          vscode.window.showInformationMessage(
+            'There are no tasks to calculate'
+          );
+        }
+        
       }
     }
   );
