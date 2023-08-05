@@ -13,9 +13,12 @@
     "vscode": "^1.79.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Snippets"    
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
