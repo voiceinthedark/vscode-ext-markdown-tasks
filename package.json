@@ -2,7 +2,7 @@
   "name": "markdown-task-calculator",
   "displayName": "Markdown Task Calculator",
   "description": "Calculate the tasks in a markdown file and generate Total tasks, done tasks and total percentage done",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "voiceinthedark",
   "icon": "images/icon.png",
   "repository": {
