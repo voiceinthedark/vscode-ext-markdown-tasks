@@ -2,7 +2,7 @@
   "name": "markdown-task-calculator",
   "displayName": "Markdown Task Calculator",
   "description": "Calculate the tasks in a markdown file and generate Total tasks, done tasks and total percentage done",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "voiceinthedark",
   "icon": "images/icon.png",
   "repository": {
@@ -21,7 +21,14 @@
     "commands": [{
       "command": "markdown-task-calculator.calculateTasks",
       "title": "Markdown Task Calculator: Calculate Tasks"
-    }]
+    }],
+    "keybindings": [
+      {
+        "command": "markdown-task-calculator.calculateTasks",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t"        
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
